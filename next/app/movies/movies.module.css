@@ -1,0 +1,7 @@
+.wrapper {
+  height: calc(100vh - 397px);
+}
+
+.wrapper_details {
+  height: calc(100vh - 322px);
+}

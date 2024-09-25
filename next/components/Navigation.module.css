@@ -1,0 +1,24 @@
+.list {
+  margin-bottom: 0px;
+  padding: 5px 0;
+}
+
+.list li {
+  display: inline;
+  padding: 10px;
+  color: beige;
+  text-transform: uppercase;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+.list li:hover {
+  color: #f65261;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid #f65261;
+}

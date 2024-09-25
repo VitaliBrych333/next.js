@@ -1,0 +1,29 @@
+.sort {
+  display: flex;
+}
+
+.sort p {
+  display: inline-block;
+  margin: 0 10px;
+  padding-top: 6px;
+  text-transform: uppercase;
+  overflow: hidden;
+  height: 30px;
+}
+
+.sort button {
+  max-width: 155px;
+  width: calc(100vw * 0.25);
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 710px) {
+  .sort button {
+    width: calc(100vw * 0.15);
+  }
+}
+
+.sort a:hover {
+  background-color: #f65261;
+}

@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: calc(100% - 17px);
+  overflow-y: auto;
+}
+
+.count {
+  height: 25px;
+  font-size: 16px;
+  padding-left: 40px;
+  color: beige;
+  background-color: rgb(161, 144, 144);
+}

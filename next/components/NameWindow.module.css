@@ -1,0 +1,16 @@
+.close {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.close div {
+   font-size: 30px;
+   margin-top: -10px;
+}
+
+.close div:hover {
+  cursor: pointer;
+  color: #f65261;
+}
+
