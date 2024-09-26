@@ -2,6 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 import { MoviesList } from '@/components/MoviesList';
 import CriteriaSearch from '@/components/CriteriaSearch';
 import Navigation from '@/components/Navigation';
@@ -24,12 +25,16 @@ export default function MoviesLayout({
       {children}
 
       <div className="types">
-        <Navigation />
+        <Suspense>
+          <Navigation />
+        </Suspense>
         <CriteriaSearch />
       </div>
 
       <div className={id ? styles.wrapper: styles.wrapper_details}>
-        <MoviesList />
+        <Suspense>
+          <MoviesList />
+        </Suspense>
       </div>
 
       <DynamicModalWindow />

@@ -60,7 +60,7 @@ const Search = () => {
       <InputGroup className={styles.search}>
         <FormControl
           placeholder="Please write the film name"
-          ref={(controlInput: HTMLInputElement) => (controlValue.myRef = controlInput)}
+          ref={(controlInput: any) => (controlValue.myRef = controlInput)}
           onChange={handleChange}
           defaultValue={defaultValue}
         />

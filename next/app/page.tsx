@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 import { MoviesList } from '@/components/MoviesList';
 import Search from '@/components/Search';
 import CriteriaSearch from '@/components/CriteriaSearch';
@@ -19,12 +20,16 @@ export default function Home() {
       </header>
 
       <div className="types">
-        <Navigation />
+        <Suspense>
+          <Navigation />
+        </Suspense>
         <CriteriaSearch />
       </div>
 
       <div className={styles.wrapper}>
-        <MoviesList />
+        <Suspense>
+          <MoviesList />
+        </Suspense>
       </div>
 
       <DynamicModalWindow />
